@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "worldtype_superflat_randomizer",
+  "version": "${version}",
+  "name": "Worldtype Superflat Randomizer",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/worldtype_superflat_randomizer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.carstenlehrmann.minecraft.mods.worldtype_superflat_randomizer.client.Worldtype_superflat_randomizerClient"
+    ],
+    "main": [
+      "dev.carstenlehrmann.minecraft.mods.worldtype_superflat_randomizer.Worldtype_superflat_randomizer"
+    ]
+  },
+  "mixins": [
+    "worldtype_superflat_randomizer.mixins.json",
+    {
+      "config": "worldtype_superflat_randomizer.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

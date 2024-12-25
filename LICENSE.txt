@@ -1,0 +1,2 @@
+Copyright (c) 2024 Carsten Lehrmann
+All rights reserved.
